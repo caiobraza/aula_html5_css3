@@ -1,0 +1,132 @@
+
+.card img {
+    transform: translate(0%);
+    width: 150px;
+    padding: 10px;
+    border: 10px solid;
+    border-image:
+        linear-gradient(#ff512f,
+            #dd2476,
+            #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+
+ @keyframes rotate {
+    50% {
+        border-image:
+            linear-gradient(360deg,
+                #ff512f,
+                #dd2476,
+                #1c64ff) 1;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+body {
+    background-image: linear-gradient(to right, rgb(229, 7, 40), rgb(4, 4, 18));
+    text-align: center;
+}
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    background-color: #272b31;
+    transition: width 0.3s;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sidebar:hover {
+    width: 160px;
+    overflow: visible;
+}
+nav {
+    height: 60vh;
+    min-height: 300px;
+}
+ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+li a {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #cacaca;
+}
+li a:hover {
+    background-image: linear-gradient(
+        left,
+        #2a88e6 7px,
+        rgba(255, 255, 255, 0.1) 7px
+    );
+    background-image: linear-gradient(
+        to right,
+        #2a88e6 7px,
+        rgba(255, 255, 255, 0.1) 7px
+    );
+    color: #ffffff;
+}
+i.fas {
+    font-size: 18px;
+    text-align: right;
+    color: white;
+}
+li p {
+    width: 75px;
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0.3px;
+    font-weight: 200;
+}
+
+h1 {
+    color: black;
+    font-family: fantasy;
+
+}
+
+h2 {
+    font-family: fantasy;
+
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.img_padrao {
+    margin-bottom: 20px;
+    width: 200px;
+    margin-top: 20px;
+}
+.img_padraoo {
+    border-bottom: 20px;
+
+}
+
+footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 40px;
+    margin-top: 15px;
+}
+.code {
+    color: rgb(46, 46, 236);
+}
